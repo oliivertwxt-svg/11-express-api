@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+    "name": "Everyday Ceramic Mug",
+    "sku": "HOME-MUG-001",
+    "category": "Home & Kitchen",
+    "price": 14.99,
+    "stock": 42,
+    "createdAt": "2025-01-12T10:30:00.000Z"
+  },
+  {
+    "id": "b1ffcdaa-ad1c-4fa9-8c7e-7ccace491b22",
+    "name": "Trailblazer Insulated Bottle",
+    "sku": "OUT-BTL-204",
+    "category": "Outdoor",
+    "price": 29.5,
+    "stock": 18,
+    "createdAt": "2025-02-03T08:15:00.000Z"
+  },
+  {
+    "id": "c20addbb-be2d-40ba-9d8f-8ddbdf5a2c33",
+    "name": "Wireless Charging Stand",
+    "sku": "ELEC-CHG-118",
+    "category": "Electronics",
+    "price": 39.99,
+    "stock": 27,
+    "createdAt": "2025-02-20T14:45:00.000Z"
+  },
+  {
+    "id": "d31beecc-cf3e-41cb-ae90-9eecae6b3d44",
+    "name": "Linen Market Tote",
+    "sku": "ACC-TOT-052",
+    "category": "Accessories",
+    "price": 22,
+    "stock": 63,
+    "createdAt": "2025-03-08T11:00:00.000Z"
+  },
+  {
+    "id": "e42cffdd-d04f-42dc-bfa1-afdfbf7c4e55",
+    "name": "Pour-Over Coffee Dripper",
+    "sku": "HOME-COF-073",
+    "category": "Home & Kitchen",
+    "price": 18.75,
+    "stock": 31,
+    "createdAt": "2025-03-21T09:20:00.000Z"
+  },
+  {
+    "id": "f530d0ee-e150-43ed-80b2-b0e0c08d5f66",
+    "name": "Bluetooth Pocket Speaker",
+    "sku": "ELEC-SPK-309",
+    "category": "Electronics",
+    "price": 54.95,
+    "stock": 12,
+    "createdAt": "2025-04-04T16:10:00.000Z"
+  },
+  {
+    "id": "0641e1ff-f261-44fe-91c3-c1f1d19e6077",
+    "name": "Merino Trail Socks",
+    "sku": "OUT-SCK-145",
+    "category": "Outdoor",
+    "price": 16.5,
+    "stock": 85,
+    "createdAt": "2025-04-19T07:40:00.000Z"
+  },
+  {
+    "id": "1752f200-0372-450f-a2d4-d202e2af7188",
+    "name": "Recycled Leather Notebook",
+    "sku": "STA-NBK-026",
+    "category": "Stationery",
+    "price": 12.25,
+    "stock": 49,
+    "createdAt": "2025-05-02T13:25:00.000Z"
+  }
+]
