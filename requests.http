@@ -1,0 +1,96 @@
+@baseUrl = http://localhost:3000
+
+# Send create before the requests that reuse its response ID below.
+
+###
+# @name health
+GET {{baseUrl}}/api/health
+
+###
+# @name listProducts
+GET {{baseUrl}}/api/products
+
+###
+# @name searchProducts
+GET {{baseUrl}}/api/products?category=Outdoor&q=trail
+
+###
+# @name sortProducts
+GET {{baseUrl}}/api/products?sort=-price
+
+###
+# @name create
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+  "name": "REST Client Sample",
+  "sku": "RCL-9001",
+  "category": "Outdoor",
+  "price": 24.5,
+  "stock": 7
+}
+
+###
+# @name getCreatedProduct
+GET {{baseUrl}}/api/products/{{create.response.body.data.id}}
+
+###
+# @name invalidCreate
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+  "name": "X",
+  "sku": "invalid",
+  "category": "Unknown",
+  "price": -2,
+  "stock": 1.5
+}
+
+###
+# @name duplicateSku
+POST {{baseUrl}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Duplicate SKU Example",
+  "sku": "HOM-0001",
+  "category": "Home & Kitchen",
+  "price": 12,
+  "stock": 3
+}
+
+###
+# @name updateProduct
+PUT {{baseUrl}}/api/products/{{create.response.body.data.id}}
+Content-Type: application/json
+
+{
+  "name": "REST Client Sample Updated",
+  "sku": "RCL-9002",
+  "category": "Outdoor",
+  "price": 26,
+  "stock": 9
+}
+
+###
+# @name patchProduct
+PATCH {{baseUrl}}/api/products/{{create.response.body.data.id}}
+Content-Type: application/json
+
+{
+  "stock": 12
+}
+
+###
+# @name deleteProduct
+DELETE {{baseUrl}}/api/products/{{create.response.body.data.id}}
+
+###
+# @name getDeletedProduct
+GET {{baseUrl}}/api/products/{{create.response.body.data.id}}
+
+###
+# @name unknownRoute
+GET {{baseUrl}}/api/unknown
